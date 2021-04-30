@@ -1,0 +1,257 @@
+:root{
+    --negro: #484848;
+    --radiopeq: 8px;
+    --radiogran: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--negro);
+}
+p{
+    line-height: 20px;
+    font-weight: 100;
+}
+h1{
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+h2{
+    color: var(--negro);
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+h4, strong{
+    font-weight: 600;
+}
+/* Clases generales */
+.flex{
+    display: flex;
+}
+.alcentro{
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+.wrapper:not(.nomargin), .cabecera{
+    margin-bottom: 50px;
+}
+/* Fin clases generales */
+
+/* Cabecera */
+nav{
+    justify-content: space-between;
+    padding: 25px 0;
+    margin-bottom: 50px;
+}
+.menu{
+    align-items: center;
+}
+.cabecera{
+    width: 100%;
+    background-image: url('img/fondocabecera.webp');
+    background-size: cover;
+    background-position: top center;
+    padding-bottom: 100px;
+}
+.cabecera p{
+    line-height: 27px;
+}
+.cabecera h1, .cabecera p{
+    color: white;
+    max-width: 370px;
+}
+.btncabecera{
+    border-radius: 60px;
+    padding: 14px;
+    color: white; 
+    text-decoration: none;
+}
+.btncabecera i{
+    color: white;
+}
+.btncabecera:hover{
+    background-color: #f4f4f47a;
+}
+.usuario{
+    border-radius: 60px;
+    padding: 5px 12px;
+    background-color: white;
+    color: var(--negro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 79px;
+}
+.usuario i:last-child {
+    font-size: 30px;
+}
+/* Fin cabecera */
+/* Ideales */
+.ideal{
+    min-width: 300px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ideal img{
+    width: 64px;
+    border-radius: var(--radiopeq);
+    margin-right: 20px;
+}
+.ideales{
+    flex-wrap: wrap;
+}
+/* Fin ideales */
+/* Tarjetas */
+.tarjetas{
+    flex-wrap: wrap;
+}
+.thumbnail{
+    background-image: url('img/estancias.webp');
+    background-size: cover;
+    height: 180px;
+    background-position: center;
+    border-radius: var(--radiogran);
+}
+.thumbnail.u{
+    background-image: url('img/estudia.webp');
+}
+.thumbnail.d{
+    background-image: url('img/familias.webp');
+}
+.thumbnail.t{
+    background-image: url('img/ciudad.webp');
+}
+.tarjeta{
+    box-shadow: 0 0 8px lightgray;
+    border-radius: var(--radiogran);
+    max-width: 318px;
+    min-width: 300px;
+    margin-bottom: 18px;
+    flex: 1;
+}
+.tarjeta p{
+    font-size: 14px;
+}
+.tarjeta:not(:last-child){
+    margin-right: 18px;
+}
+.tarjeta div:last-child{
+    padding: 15px;
+}
+/* Fin tarjetas */
+
+/* Experiencias */
+.experiencias{
+    flex-wrap: wrap;
+}
+.actividades{
+    margin-bottom: 15px;
+}
+.imgbox{
+    background-image: url('img/modelo.webp');
+    width: 180px;
+    height: 265px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+.imgbox.u{
+    background-image: url('img/modelo1.webp');
+}
+.imgbox.d{
+    background-image: url('img/modelo3.webp');
+}
+.imgbox.t{
+    background-image: url('img/modelo4.webp');
+}
+.imgbox.c{
+    background-image: url('img/modelo5.jpg');
+}
+.imgbox.ci{
+    background-image: url('img/modelo6.jpg');
+}
+.textobox{
+     width: 200px; 
+}
+.actividades:not(:last-child){
+    margin-right: 15px;
+}
+.thin{
+    font-size: 14px;
+    color: grey;
+}
+.btnestilos{
+    border-radius: var(--radiopeq);
+    display: inline-block;
+    padding: 8px 5px;
+}
+.btnestilos:hover{
+    background-color: rgb(241, 239, 239);
+}
+/* Fin experiencias */
+/* Seguridad */
+.seguridad{
+    background-color: rgb(247, 247, 247);
+    padding: 64px 0 45px;
+    border-bottom: 1px solid lightgrey;
+}
+.viajemos{
+    width: 40%;
+}
+.viajemos h2{
+    margin-top: 30px;
+}
+.apartados{
+    width: 20%;
+    padding-right: 50px;
+}
+.apartados i{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.apartados h4{
+    margin-bottom: 5px;
+}
+/* Fin Seguridad */
+/* Referencias */
+.referencias{
+    background-color: rgb(247, 247, 247);
+    padding: 64px 0 8px;
+}
+.listas{
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 30px;
+}
+.lista{
+    width: 25%;
+}
+.lista:not(:last-child){
+    margin-right: 10px;
+}
+.lista li a{
+    text-decoration: none;
+    font-size: 14px; 
+}
+.lista li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.lista h4{
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+/* Fin referencias */
+@media (max-width: 1315px){
+    .wrapper{
+        max-width: 1000px;
+    }
+}
